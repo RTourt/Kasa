@@ -1,0 +1,24 @@
+.navbar{
+    display: flex;    
+    align-items: center;
+    max-width: 1240px;
+    margin:auto;  
+    padding: 40px 100px 60px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FF6060; 
+    gap: 60px;   
+    
+}
+.navbar_logo{
+    margin-right: auto;
+}
+.navbar a{
+    text-decoration: none;
+    color: #FF6060;
+    border-bottom:2px solid transparent;
+}
+.navbar a:hover{
+    border-bottom:2px solid #FF6060;
+}

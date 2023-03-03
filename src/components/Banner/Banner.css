@@ -3,13 +3,16 @@
     display: grid;
     place-items: center;       
     border-radius: 25px; 
+    margin-bottom: 45px;
+    max-width: 100%;
 }
 .banner img{    
     width: 100%;
     max-width: 1240px;
     height: 223px;
     border-radius: 25px;   
-    object-fit: cover;    
+    object-fit: cover;  
+    filter: brightness(0.7);  
 }
 .banner h1{
     position: absolute;
@@ -17,4 +20,5 @@
     font-weight: 500;
     font-size: 48px;
     color: white;
+    z-index: 1;
 }

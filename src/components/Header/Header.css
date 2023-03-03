@@ -1,4 +1,4 @@
-.navbar{
+.header{
     display: flex;    
     align-items: center;
     max-width: 1240px;
@@ -7,12 +7,14 @@
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    color: #FF6060; 
-    gap: 60px;   
-    
+    color: #FF6060;     
 }
-.navbar_logo{
+.header_logo{
     margin-right: auto;
+}
+.navbar{
+    display: flex;
+    gap: 60px;
 }
 .navbar a{
     text-decoration: none;

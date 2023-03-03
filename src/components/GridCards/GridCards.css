@@ -1,0 +1,12 @@
+.gridCards{
+    background-color: #F7F7F7;
+    border-radius: 25px;
+    min-height: 500px;    
+    max-width: 1240px;
+    margin: auto;    
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;      
+}
+

@@ -1,0 +1,34 @@
+.card {
+    position: relative;
+    width: 340px;    
+    height: 340px;    
+    margin-bottom: 50px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;    
+}
+  
+.card img {
+    position: absolute;
+    width: 100%; 
+    height: inherit;   
+    object-fit: cover;  
+    background-color: #FF6060;   
+}
+  
+.card h2 {
+    position: absolute;          
+    left: 5.88%;
+    right: 5.88%;
+    top: 78.82%;
+    bottom: 5.88%;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 142.6%;
+display: flex;
+align-items: flex-end;
+flex-wrap: wrap;
+color: #FFFFFF;
+}  
+  

@@ -3,10 +3,11 @@ import "./Banner.css";
 import banner_img from "../../assets/banner_img.png";
 
 function Banner() {
+  const title = "Chez vous, partout et ailleurs"
   return (
     <div className="banner">
       <img src={banner_img} alt="banner" />
-      <h1>Chez vous, partout et ailleurs</h1>
+      <h1>{title}</h1>
     </div>
   );
 }

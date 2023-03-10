@@ -9,9 +9,9 @@ function Header() {
       <div className="header_logo">
         <img src={logo} alt="Logo de l'agence Kasa" />
       </div>
-      <nav className="navbar">        
+      <nav className="navbar">
         <Link to="/"><a href="/">Accueil</a></Link>
-        <Link to="about"><a href="about">A Propos</a></Link>        
+        <Link to="about"><a href="about">A Propos</a></Link>
       </nav>
     </header>
   );

@@ -1,0 +1,21 @@
+.container-tags{
+    display: flex;
+    width: auto;
+}
+
+.button-tag{
+    background-color: #FF6060;
+    color: white;
+    border-radius: 10px;
+    width: auto;      
+    height: 25px;
+    font-weight: 500;
+font-size: 14px;
+line-height: 142.6%;
+text-align: center;
+margin-right: 10px;
+padding: 0 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+}

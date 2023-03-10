@@ -4,7 +4,7 @@ import "./GridCards.css"
 import data from '../../datas/logements.json';
 
 
-function GridCards() {  
+function GridCards() {
   const [cardsData] = useState(data);
   return (
     <div className="gridCards">

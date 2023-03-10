@@ -5,9 +5,9 @@ import "../style/Main.css"
 
 function Home() {
   return (
-    <div className='main'>      
-    <Banner/>    
-    <GridCards/>   
+    <div className='main'>
+      <Banner />
+      <GridCards />
     </div>
   )
 }

@@ -1,12 +1,13 @@
-.gridCards{
+.gridCards {
     background-color: #F7F7F7;
     border-radius: 25px;
-    min-height: 500px;    
+    min-height: 500px;
     max-width: 1240px;
-    margin: auto;    
+    margin: auto;
+    margin-bottom: 45px;
     padding: 50px;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;      
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 57px;
 }
-

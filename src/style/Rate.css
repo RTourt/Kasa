@@ -1,0 +1,11 @@
+.container-rate{
+    display: flex;
+    width: auto;
+    margin-top: 24px;
+    border: 1px solid blue;      
+}
+.container-rate img{
+    border-radius: 10px;
+    width: 30px;
+height: 30px;   
+}

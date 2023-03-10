@@ -1,6 +1,5 @@
-.main{
-    border: 1px solid red;
-    padding-inline: 3rem;    
+.main {
+    padding-inline: 3rem;
     max-width: 1240px;
     margin: auto;
 }

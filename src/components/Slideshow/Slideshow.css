@@ -1,0 +1,40 @@
+.container-slideshow{
+    height: 415px;   
+    mix-blend-mode: normal;
+    border-radius: 25px; 
+    max-width: 1240px;
+    height: 415px;
+    margin-bottom: 30px;
+}
+.slideshow-button-wrapper{
+    display: flex;
+    justify-content: space-between;    
+}
+
+.slideshow-button{
+    background: transparent;
+    border: none;    
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    position: relative;
+    top: 170px;
+    margin: 0 23.36px 0;
+}
+  
+  .slideshow-button:hover {
+    opacity: 0.5;
+  }  
+
+  .slideshow-button img{
+    width: 46.38px;
+    height: 79.2px;
+  }
+
+  .current-slide {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    color: white;
+  }

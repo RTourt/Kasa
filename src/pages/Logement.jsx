@@ -6,12 +6,11 @@ import Tag from "../components/Tag/Tag"
 import star_img from "../assets/star.png"
 import "../style/Rate.css"
 import { Dropdown, DropdownEquipments } from '../components/Dropdown/Dropdown';
-
+import Slideshow from '../components/Slideshow/Slideshow'
 
 function Logement() {
   const { id } = useParams();
   const [logement, setLogement] = useState({});
-
 
   useEffect(() => {
     const foundLogement = data.find((logement) => logement.id === id);
@@ -26,13 +25,11 @@ function Logement() {
     return starImage;
   }
 
-
-
-
-
   return (
     <article className="container-card">
-      <div className='container-banner'></div>
+      <div className='container-slideshow'>
+        {logement.pictures && <Slideshow images={logement.pictures} duration={3000} />}
+      </div>
       <div className='container-wrapper'>
         <div className='container-info'>
           <h2>{logement.title}</h2>

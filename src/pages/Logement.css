@@ -3,24 +3,13 @@
     margin: auto;
     color: #FF6060;
 }
-.container-banner{
-    max-width: 1240px;
-    height: 415px;
-    margin-bottom: 30px;
-    border-radius: 25px;
-    background: black;
 
-}
 .container-wrapper{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
     margin-bottom: 24px;
-}
-
-.container-info{
-    border: 1px solid red;    
 }
 
 .container-info h2{    
@@ -35,15 +24,13 @@ font-size: 18px;
 margin: 0 0 24px;
 }
 
-.container-host{
-    border: 1px solid green;
+.container-host{    
     display: flex;
     align-items: center;
     flex-direction: row;    
 }
 
-.container-host p{
-    border: 1px solid green;
+.container-host p{  
     display: flex;
     align-items: center;
     flex-direction: row;

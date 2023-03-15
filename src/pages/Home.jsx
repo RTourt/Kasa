@@ -5,6 +5,7 @@ import "../style/Main.css"
 
 function Home() {
   return (
+    // Affichage de la bannière et la grille de cartes de logements.    
     <div className='main'>
       <Banner />
       <GridCards />

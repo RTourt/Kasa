@@ -5,13 +5,14 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
+    // affichage du header avec le logo Kasa et un élément nav contenant 2 liens créés à l'aide de Link.
     <header className="header">
       <div className="header_logo">
         <img src={logo} alt="Logo de l'agence Kasa" />
       </div>
       <nav className="navbar">
-        <Link to="/"><a href="/">Accueil</a></Link>
-        <Link to="about"><a href="about">A Propos</a></Link>
+        <Link to="/">Accueil</Link>
+        <Link to="about">A Propos</Link>
       </nav>
     </header>
   );

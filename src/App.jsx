@@ -1,15 +1,15 @@
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Logement from "./pages/Logement";
 import Error from "./pages/Error";
-
 import "./App.css";
 
-
+// La fonction App retourne un arbre de composants.
+// Chaque route a un chemin d'URL et le composant à afficher lorsque ce chemin est atteint.
 
 function App() {
   return (

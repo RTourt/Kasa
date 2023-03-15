@@ -1,9 +1,10 @@
 import React from 'react'
-import "./Footer.css"
 import logo from "../../assets/logo-footer.png"
+import "./Footer.css"
 
 function Footer() {
   return (
+    // affichage du footer avec le logo Kasa et un élément p pour le texte du copyright.
     <footer className='footer'>
       <div className='footer_logo'>
         <img src={logo} alt="Logo de l'agence Kasa" />
@@ -12,7 +13,6 @@ function Footer() {
     </footer>
   )
 }
-
 
 export default Footer
 

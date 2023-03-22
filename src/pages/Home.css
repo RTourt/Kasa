@@ -1,0 +1,19 @@
+.main {
+    max-width: 1240px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+ /*mobil version and tablet*/
+    @media only screen and (min-width: 375px) and (max-width: 768px) {  
+    .main{
+        padding: 0 20px;
+    }
+}
+/*mobil xs version*/
+@media (max-width: 374px) { 
+    .main{
+        padding: 0 5px;
+    }
+ }
+

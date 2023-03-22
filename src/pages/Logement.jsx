@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import data from '../datas/logements.json';
 import Tag from "../components/Tag/Tag";
 import Rate from '../components/Rate/Rate';
 import Slideshow from '../components/Slideshow/Slideshow';
-import { Dropdown, DropdownEquipments } from '../components/Collapse/Collapse';
+import { Collapse } from '../components/Collapse/Collapse';
 import "./Logement.css";
+
 
 // fonction qui permet de récupérer les données d'un logement à partir de son ID dans la base de données (logements.json), et de stocker ces données.
 function Logement() {
@@ -13,15 +14,19 @@ function Logement() {
   const { id } = useParams();
   // useState a un objet vide à l'état initial
   const [logement, setLogement] = useState({});
-
+  const navigate = useNavigate();
   // useEffect recherche le logement correspondant dans la base de données à chaque fois que l'ID du logement change. 
   // donc recherche le logement dans data avec l'id et on met à jour l'état de logement avec le logement trouvé en utilisant setLogement. 
-  // le deuxième argument [id] indique que la fonction doit êtr eexecutée chaque fois que l'id change
+  // le deuxième argument [id, navigate] indique que la fonction doit être executée chaque fois que l'id ou navigate changent  
   useEffect(() => {
     const foundLogement = data.find((logement) => logement.id === id);
-    setLogement(foundLogement);
-  }, [id]);
-
+    if (foundLogement) {
+      setLogement(foundLogement);
+    } else {
+      // Si le logement n'est pas trouvé, redirige vers la page Error
+      navigate('./Error');
+    }
+  }, [id, navigate]);
 
   return (
     // affichage de la carte du logement
@@ -52,11 +57,9 @@ function Logement() {
         </div>
       </div>
       {/* affichage des menus déroulants (description + équipements) */}
-      <div className='dropdown-wrapper'>
-        <Dropdown>{logement.description}</Dropdown>
-        <DropdownEquipments>
-          {logement.equipments && logement.equipments.map((equipment) => equipment)}
-        </DropdownEquipments>
+      <div className='container-dropdown'>
+        <Collapse title="Description" description={logement.description} />
+        <Collapse title="Équipments" description={logement.equipments} />
       </div>
     </article >
   )

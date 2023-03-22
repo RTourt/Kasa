@@ -25,3 +25,24 @@
     height: 46px;
 }
 
+/*mobil version and tablet*/
+    @media screen and (min-width: 375px) and (max-width: 768px) { 
+    .footer_logo {        
+        margin: 62px 0 28px;
+    }
+    
+    .footer_txt {        
+        font-size: 12px;                 
+    }
+}
+
+/*mobil xs version*/
+@media (max-width: 374px) {
+    .footer_logo {        
+        margin: 62px 0 28px;
+    }
+    
+    .footer_txt {        
+        font-size: 12px;                 
+    }
+ }

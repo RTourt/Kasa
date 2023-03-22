@@ -10,3 +10,23 @@
     flex-wrap: wrap;
     gap: 57px;
 }
+
+/*mobil version and tablet*/
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .gridCards {        
+        border-radius: 10px;         
+        gap: 20px;
+        padding: 0px;
+        background-color: transparent;
+    }
+}
+
+/*mobil xs version*/
+@media (max-width: 374px) { 
+    .gridCards {        
+    border-radius: 10px;         
+    gap: 10px;
+    padding: 0px;
+    background-color: transparent;
+}
+}

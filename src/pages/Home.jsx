@@ -1,7 +1,7 @@
 import React from 'react'
 import Banner from '../components/Banner/Banner'
 import GridCards from "../components/GridCards/GridCards"
-import "../style/Main.css"
+import "./Home.css"
 
 function Home() {
   return (

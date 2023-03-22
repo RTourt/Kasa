@@ -2,6 +2,7 @@
     max-width: 1240px;
     margin: auto;
     color: #FF6060;
+    padding: 0 20px;  
 }
 
 .container-wrapper{
@@ -30,7 +31,6 @@
     align-items: flex-end;
 }
 
-
 .container-host{    
     display: flex;
     align-items: center;
@@ -52,3 +52,102 @@
     border-radius: 40px;
 }
 
+.container-dropdown{
+    display: flex;
+    align-items: flex-start;
+    gap: 74px;  
+    width: auto;
+    max-width: 1240px;
+}
+
+
+/*mobil version and tablet*/
+    @media screen and (min-width: 375px) and (max-width: 768px) {
+    .container-card{
+        padding: 0 20px;        
+    }
+    
+    .container-wrapper{
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    
+    .container-info h2{           
+        font-size: 18px;
+        margin: 5px 0;
+    }
+    
+    .container-location {          
+        font-size: 14px;
+        margin: 0 0 10px;
+    }
+    
+    .container-host-rate{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: -webkit-fill-available;
+        align-items: center;
+        margin: 16.5px 0;
+    }
+        
+    .container-host p{          
+        font-size: 12px;
+    }
+    
+    .container-host img{
+        width: 32px;
+        height: 32px;
+    }
+    
+    .container-dropdown{
+        flex-direction: column;
+        gap: 20px; 
+        width: auto;            
+    }
+}
+
+
+/*mobil xs version*/
+@media (max-width: 374px) {   
+        .container-card{
+            padding: 0 5px;        
+        }
+        
+        .container-wrapper{
+            flex-direction: column;
+            margin-bottom: 0px;
+        }
+        
+        .container-info h2{           
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        
+        .container-location {          
+            font-size: 14px;
+            margin: 0 0 10px;
+        }
+        
+        .container-host-rate{
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            width: -webkit-fill-available;
+            align-items: center;
+            margin: 16.5px 0;
+        }
+            
+        .container-host p{          
+            font-size: 12px;
+        }
+        
+        .container-host img{
+            width: 32px;
+            height: 32px;
+        }
+        
+        .container-dropdown{
+            flex-direction: column;
+            gap: 20px; 
+            width: auto;            
+        }
+ }

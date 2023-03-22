@@ -41,3 +41,33 @@
     position: absolute;
     height: inherit;
 }
+
+/*mobil version and tablet*/
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .card {        
+        height: 255px;    
+        border-radius: 10px;
+    }
+        
+    .card h2 {                
+        top: 90%;
+        width: 300px;        
+        justify-content: flex-start;
+        align-content: flex-end;                 
+    }    
+}
+
+/*mobil xs version*/
+@media (max-width: 374px) { 
+    .card {        
+        height: 255px;    
+        border-radius: 10px;
+    }
+        
+    .card h2 {     
+        top: 90%;               
+        justify-content: flex-start;
+        align-content: flex-end;  
+        font-size: 15px;               
+    }    
+}

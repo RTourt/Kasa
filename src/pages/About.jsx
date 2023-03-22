@@ -1,20 +1,23 @@
-import React from 'react'
-import "../components/Banner/Banner.css"
-import '../components/Collapse/Collapse.css';
-import bannerAbout from "../assets/banner_img-about.png"
-import { DropdownAbout } from '../components/Collapse/Collapse'
-
+import React from 'react';
+import bannerAbout from "../assets/banner_img-about.png";
+import { Collapse } from '../components/Collapse/Collapse';
+import aboutContent from "../datas/aboutContent.json";
+import "./About.css";
 
 function About() {
   return (
-    <div>
+    <>
       {/* Affichage de la banière */}
-      <div className="banner">
+      <div className="banner bannerAbout">
         <img src={bannerAbout} alt="banner about" />
       </div>
       {/* Affichage des menus déroulants */}
-      <DropdownAbout />
-    </div>
+      <div className='dropdown-about'>
+        {Object.entries(aboutContent).map(([key, value], index) => (
+          <Collapse key={key} title={value.aboutTitle} description={value.aboutText} />
+        ))}
+      </div>
+    </>
   )
 }
 

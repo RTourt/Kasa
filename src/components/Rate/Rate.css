@@ -8,3 +8,30 @@
     width: 30px;
     height: 30px;   
 }
+
+
+/*mobil version and tablet*/
+    @media screen and (min-width: 375px) and (max-width: 768px) { 
+    .container-rate{
+        display: flex;
+        width: auto;
+        margin-top: 0px;        
+    }
+    .container-rate img{
+        width:15px;
+        height: 15px;   
+    }
+}
+
+/*mobil xs version*/
+@media (max-width: 374px) { 
+    .container-rate{
+        display: flex;
+        width: auto;
+        margin-top: 0px;        
+    }
+    .container-rate img{
+        width:15px;
+        height: 15px;   
+    }
+}

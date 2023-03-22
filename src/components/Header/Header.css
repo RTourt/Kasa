@@ -3,7 +3,7 @@
     align-items: center;
     max-width: 1240px;
     margin: auto;
-    padding: 40px 100px 0px;
+    padding: 40px 20px 0px;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -22,9 +22,58 @@
 .navbar a {
     text-decoration: none;
     color: #FF6060;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid transparent; 
+    
 }
 
 .navbar a:hover {
     border-bottom: 2px solid #FF6060;
+}
+
+/*mobil version and tablet*/
+    @media screen and (min-width: 375px) and (max-width: 768px) {
+    .header {        
+      max-width: 100%;      
+      padding: 20px;         
+    }
+    .header_logo {
+        margin-right: auto;
+        height: 47px;
+    }
+    
+    .header_logo img{
+        width: 145px;
+        height: 47px;
+    }
+    .navbar {      
+      gap: 15px;    
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+        
+    .navbar a:hover {
+        border-bottom: 1px solid #FF6060;
+    }
+}
+
+/*mobil xs version*/
+@media (max-width: 374px) {
+   .header {             
+      padding: 20px 5px;     
+      flex-direction: column;    
+    }
+    .header_logo {
+        margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;        
+    }    
+    .header_logo img{
+        width: 145px;
+        height: 47px;
+    }
+    .navbar {      
+      gap: 40px;    
+      font-size: 12px;
+      text-transform: uppercase;
+    }    
 }

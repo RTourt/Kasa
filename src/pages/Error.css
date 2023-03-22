@@ -21,6 +21,8 @@
     font-size: 36px;
     line-height: 142.6%;
     margin: 0px;
+    padding: 0 20px;
+    text-align: center;
 }
 
 .error a{
@@ -30,4 +32,54 @@
     text-decoration-line: underline;
     margin: 182px 0 150px;
     color: #FF6060;
+}
+
+.retourLigne{
+    display: none;
+}
+
+/*mobil version and tablet*/
+    @media screen and (min-width: 375px) and (max-width: 768px) {  
+    .error h1{          
+        font-size: 96px; 
+        margin-bottom: 10px;  
+        height: 100px;                   
+    }
+    
+    .error p{        
+        font-size: 18px;  
+        text-align: center;    
+        height: 52px; 
+        width: 260px;   
+    }
+    
+    .error a{        
+        font-size: 14px; 
+        margin: 133px 0 130px;       
+    }
+    
+    .retourLigne{
+        display: inherit;
+    }
+}
+
+/*mobil xs version*/
+@media (max-width: 374px) { 
+    .error h1{          
+        font-size: 96px; 
+        margin-bottom: 10px;  
+        height: 100px;                   
+    }
+    
+    .error p{        
+        font-size: 18px;  
+        text-align: center;    
+        height: 52px;           
+    }
+    
+    .error a{        
+        font-size: 14px; 
+        margin: 133px 0 130px; 
+        text-align: center;      
+    }
 }

@@ -45,7 +45,6 @@ function Slideshow(props) {
         </div>
     );
 
-
 }
 
 export default Slideshow;
